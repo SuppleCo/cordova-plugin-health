@@ -22,11 +22,14 @@ dataTypes['waist_circumference'] = 'HKQuantityTypeIdentifierWaistCircumference';
 dataTypes['activity'] = 'HKWorkoutTypeIdentifier';
 dataTypes['sleep'] = 'HKCategoryTypeIdentifierSleepAnalysis';
 dataTypes['nutrition'] = 'HKCorrelationTypeIdentifierFood';
+// Full list of HealthKit-supported dietary quantity types
+// Reference: https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier?language=objc
 dataTypes['nutrition.calories'] = 'HKQuantityTypeIdentifierDietaryEnergyConsumed';
 dataTypes['nutrition.fat.total'] = 'HKQuantityTypeIdentifierDietaryFatTotal';
 dataTypes['nutrition.fat.saturated'] = 'HKQuantityTypeIdentifierDietaryFatSaturated';
-dataTypes['nutrition.fat.polyunsaturated'] = 'HKQuantityTypeIdentifierDietaryFatPolyunsaturated';
 dataTypes['nutrition.fat.monounsaturated'] = 'HKQuantityTypeIdentifierDietaryFatMonounsaturated';
+dataTypes['nutrition.fat.polyunsaturated'] = 'HKQuantityTypeIdentifierDietaryFatPolyunsaturated';
+dataTypes['nutrition.fat.trans'] = 'HKQuantityTypeIdentifierDietaryFatTrans';
 dataTypes['nutrition.cholesterol'] = 'HKQuantityTypeIdentifierDietaryCholesterol';
 dataTypes['nutrition.sodium'] = 'HKQuantityTypeIdentifierDietarySodium';
 dataTypes['nutrition.potassium'] = 'HKQuantityTypeIdentifierDietaryPotassium';
@@ -35,11 +38,31 @@ dataTypes['nutrition.dietary_fiber'] = 'HKQuantityTypeIdentifierDietaryFiber';
 dataTypes['nutrition.sugar'] = 'HKQuantityTypeIdentifierDietarySugar';
 dataTypes['nutrition.protein'] = 'HKQuantityTypeIdentifierDietaryProtein';
 dataTypes['nutrition.vitamin_a'] = 'HKQuantityTypeIdentifierDietaryVitaminA';
+dataTypes['nutrition.vitamin_b6'] = 'HKQuantityTypeIdentifierDietaryVitaminB6';
+dataTypes['nutrition.vitamin_b12'] = 'HKQuantityTypeIdentifierDietaryVitaminB12';
 dataTypes['nutrition.vitamin_c'] = 'HKQuantityTypeIdentifierDietaryVitaminC';
+dataTypes['nutrition.vitamin_d'] = 'HKQuantityTypeIdentifierDietaryVitaminD';
+dataTypes['nutrition.vitamin_e'] = 'HKQuantityTypeIdentifierDietaryVitaminE';
+dataTypes['nutrition.vitamin_k'] = 'HKQuantityTypeIdentifierDietaryVitaminK';
 dataTypes['nutrition.calcium'] = 'HKQuantityTypeIdentifierDietaryCalcium';
 dataTypes['nutrition.iron'] = 'HKQuantityTypeIdentifierDietaryIron';
-dataTypes['nutrition.water'] = 'HKQuantityTypeIdentifierDietaryWater';
+dataTypes['nutrition.thiamin'] = 'HKQuantityTypeIdentifierDietaryThiamin';
+dataTypes['nutrition.riboflavin'] = 'HKQuantityTypeIdentifierDietaryRiboflavin';
+dataTypes['nutrition.niacin'] = 'HKQuantityTypeIdentifierDietaryNiacin';
+dataTypes['nutrition.folate'] = 'HKQuantityTypeIdentifierDietaryFolate';
+dataTypes['nutrition.biotin'] = 'HKQuantityTypeIdentifierDietaryBiotin';
+dataTypes['nutrition.pantothenic_acid'] = 'HKQuantityTypeIdentifierDietaryPantothenicAcid';
+dataTypes['nutrition.phosphorus'] = 'HKQuantityTypeIdentifierDietaryPhosphorus';
+dataTypes['nutrition.iodine'] = 'HKQuantityTypeIdentifierDietaryIodine';
+dataTypes['nutrition.magnesium'] = 'HKQuantityTypeIdentifierDietaryMagnesium';
+dataTypes['nutrition.zinc'] = 'HKQuantityTypeIdentifierDietaryZinc';
+dataTypes['nutrition.selenium'] = 'HKQuantityTypeIdentifierDietarySelenium';
+dataTypes['nutrition.copper'] = 'HKQuantityTypeIdentifierDietaryCopper';
+dataTypes['nutrition.manganese'] = 'HKQuantityTypeIdentifierDietaryManganese';
+dataTypes['nutrition.chromium'] = 'HKQuantityTypeIdentifierDietaryChromium';
+dataTypes['nutrition.molybdenum'] = 'HKQuantityTypeIdentifierDietaryMolybdenum';
 dataTypes['nutrition.caffeine'] = 'HKQuantityTypeIdentifierDietaryCaffeine';
+dataTypes['nutrition.water'] = 'HKQuantityTypeIdentifierDietaryWater';
 dataTypes['blood_glucose'] = 'HKQuantityTypeIdentifierBloodGlucose';
 dataTypes['insulin'] = 'HKQuantityTypeIdentifierInsulinDelivery';
 dataTypes['appleExerciseTime'] = 'HKQuantityTypeIdentifierAppleExerciseTime';
@@ -70,11 +93,13 @@ units['heart_rate.variability'] = 'ms';
 units['fat_percentage'] = '%';
 units['waist_circumference'] = 'm';
 units['nutrition'] = ['g', 'ml', 'kcal'];
+// Full list of HealthKit-supported dietary nutrient units
 units['nutrition.calories'] = 'kcal';
 units['nutrition.fat.total'] = 'g';
 units['nutrition.fat.saturated'] = 'g';
-units['nutrition.fat.polyunsaturated'] = 'g';
 units['nutrition.fat.monounsaturated'] = 'g';
+units['nutrition.fat.polyunsaturated'] = 'g';
+units['nutrition.fat.trans'] = 'g';
 units['nutrition.cholesterol'] = 'mg';
 units['nutrition.sodium'] = 'mg';
 units['nutrition.potassium'] = 'mg';
@@ -83,11 +108,31 @@ units['nutrition.dietary_fiber'] = 'g';
 units['nutrition.sugar'] = 'g';
 units['nutrition.protein'] = 'g';
 units['nutrition.vitamin_a'] = 'mcg';
+units['nutrition.vitamin_b6'] = 'mg';
+units['nutrition.vitamin_b12'] = 'mcg';
 units['nutrition.vitamin_c'] = 'mg';
+units['nutrition.vitamin_d'] = 'mcg';
+units['nutrition.vitamin_e'] = 'mg';
+units['nutrition.vitamin_k'] = 'mcg';
 units['nutrition.calcium'] = 'mg';
 units['nutrition.iron'] = 'mg';
+units['nutrition.thiamin'] = 'mg';
+units['nutrition.riboflavin'] = 'mg';
+units['nutrition.niacin'] = 'mg';
+units['nutrition.folate'] = 'mcg';
+units['nutrition.biotin'] = 'mcg';
+units['nutrition.pantothenic_acid'] = 'mg';
+units['nutrition.phosphorus'] = 'mg';
+units['nutrition.iodine'] = 'mcg';
+units['nutrition.magnesium'] = 'mg';
+units['nutrition.zinc'] = 'mg';
+units['nutrition.selenium'] = 'mcg';
+units['nutrition.copper'] = 'mg';
+units['nutrition.manganese'] = 'mg';
+units['nutrition.chromium'] = 'mcg';
+units['nutrition.molybdenum'] = 'mcg';
+units['nutrition.caffeine'] = 'mg';
 units['nutrition.water'] = 'ml';
-units['nutrition.caffeine'] = 'g';
 units['blood_glucose'] = 'mmol/L';
 units['insulin'] = 'IU';
 units['appleExerciseTime'] = 'min';
@@ -850,3 +895,47 @@ var bucketize = function (data, bucket, startD, endD, unit, merge) {
   }
   return retval;
 };
+
+// Full list of HealthKit-supported dietary quantity types for easy reference
+// Each object: { id, name, unit }
+const HEALTHKIT_NUTRIENTS = [
+  { id: 'HKQuantityTypeIdentifierDietaryEnergyConsumed', name: 'Energy', unit: 'kcal' },
+  { id: 'HKQuantityTypeIdentifierDietaryFatTotal', name: 'Total Fat', unit: 'g' },
+  { id: 'HKQuantityTypeIdentifierDietaryFatSaturated', name: 'Saturated Fat', unit: 'g' },
+  { id: 'HKQuantityTypeIdentifierDietaryFatMonounsaturated', name: 'Monounsaturated Fat', unit: 'g' },
+  { id: 'HKQuantityTypeIdentifierDietaryFatPolyunsaturated', name: 'Polyunsaturated Fat', unit: 'g' },
+  { id: 'HKQuantityTypeIdentifierDietaryFatTrans', name: 'Trans Fat', unit: 'g' },
+  { id: 'HKQuantityTypeIdentifierDietaryCholesterol', name: 'Cholesterol', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietarySodium', name: 'Sodium', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryPotassium', name: 'Potassium', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryCarbohydrates', name: 'Carbohydrates', unit: 'g' },
+  { id: 'HKQuantityTypeIdentifierDietaryFiber', name: 'Fiber', unit: 'g' },
+  { id: 'HKQuantityTypeIdentifierDietarySugar', name: 'Sugar', unit: 'g' },
+  { id: 'HKQuantityTypeIdentifierDietaryProtein', name: 'Protein', unit: 'g' },
+  { id: 'HKQuantityTypeIdentifierDietaryVitaminA', name: 'Vitamin A', unit: 'mcg' },
+  { id: 'HKQuantityTypeIdentifierDietaryVitaminB6', name: 'Vitamin B6', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryVitaminB12', name: 'Vitamin B12', unit: 'mcg' },
+  { id: 'HKQuantityTypeIdentifierDietaryVitaminC', name: 'Vitamin C', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryVitaminD', name: 'Vitamin D', unit: 'mcg' },
+  { id: 'HKQuantityTypeIdentifierDietaryVitaminE', name: 'Vitamin E', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryVitaminK', name: 'Vitamin K', unit: 'mcg' },
+  { id: 'HKQuantityTypeIdentifierDietaryCalcium', name: 'Calcium', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryIron', name: 'Iron', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryThiamin', name: 'Thiamin (B1)', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryRiboflavin', name: 'Riboflavin (B2)', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryNiacin', name: 'Niacin (B3)', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryFolate', name: 'Folate', unit: 'mcg' },
+  { id: 'HKQuantityTypeIdentifierDietaryBiotin', name: 'Biotin', unit: 'mcg' },
+  { id: 'HKQuantityTypeIdentifierDietaryPantothenicAcid', name: 'Pantothenic Acid (B5)', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryPhosphorus', name: 'Phosphorus', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryIodine', name: 'Iodine', unit: 'mcg' },
+  { id: 'HKQuantityTypeIdentifierDietaryMagnesium', name: 'Magnesium', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryZinc', name: 'Zinc', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietarySelenium', name: 'Selenium', unit: 'mcg' },
+  { id: 'HKQuantityTypeIdentifierDietaryCopper', name: 'Copper', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryManganese', name: 'Manganese', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryChromium', name: 'Chromium', unit: 'mcg' },
+  { id: 'HKQuantityTypeIdentifierDietaryMolybdenum', name: 'Molybdenum', unit: 'mcg' },
+  { id: 'HKQuantityTypeIdentifierDietaryCaffeine', name: 'Caffeine', unit: 'mg' },
+  { id: 'HKQuantityTypeIdentifierDietaryWater', name: 'Water', unit: 'ml' }
+];
