@@ -29,7 +29,7 @@ dataTypes['nutrition.fat.total'] = 'HKQuantityTypeIdentifierDietaryFatTotal';
 dataTypes['nutrition.fat.saturated'] = 'HKQuantityTypeIdentifierDietaryFatSaturated';
 dataTypes['nutrition.fat.monounsaturated'] = 'HKQuantityTypeIdentifierDietaryFatMonounsaturated';
 dataTypes['nutrition.fat.polyunsaturated'] = 'HKQuantityTypeIdentifierDietaryFatPolyunsaturated';
-dataTypes['nutrition.fat.trans'] = 'HKQuantityTypeIdentifierDietaryFatTrans';
+//dataTypes['nutrition.fat.trans'] = 'HKQuantityTypeIdentifierDietaryFatTrans';
 dataTypes['nutrition.cholesterol'] = 'HKQuantityTypeIdentifierDietaryCholesterol';
 dataTypes['nutrition.sodium'] = 'HKQuantityTypeIdentifierDietarySodium';
 dataTypes['nutrition.potassium'] = 'HKQuantityTypeIdentifierDietaryPotassium';
@@ -99,7 +99,7 @@ units['nutrition.fat.total'] = 'g';
 units['nutrition.fat.saturated'] = 'g';
 units['nutrition.fat.monounsaturated'] = 'g';
 units['nutrition.fat.polyunsaturated'] = 'g';
-units['nutrition.fat.trans'] = 'g';
+//units['nutrition.fat.trans'] = 'g';
 units['nutrition.cholesterol'] = 'mg';
 units['nutrition.sodium'] = 'mg';
 units['nutrition.potassium'] = 'mg';
@@ -904,7 +904,7 @@ const HEALTHKIT_NUTRIENTS = [
   { id: 'HKQuantityTypeIdentifierDietaryFatSaturated', name: 'Saturated Fat', unit: 'g' },
   { id: 'HKQuantityTypeIdentifierDietaryFatMonounsaturated', name: 'Monounsaturated Fat', unit: 'g' },
   { id: 'HKQuantityTypeIdentifierDietaryFatPolyunsaturated', name: 'Polyunsaturated Fat', unit: 'g' },
-  { id: 'HKQuantityTypeIdentifierDietaryFatTrans', name: 'Trans Fat', unit: 'g' },
+  //{ id: 'HKQuantityTypeIdentifierDietaryFatTrans', name: 'Trans Fat', unit: 'g' },
   { id: 'HKQuantityTypeIdentifierDietaryCholesterol', name: 'Cholesterol', unit: 'mg' },
   { id: 'HKQuantityTypeIdentifierDietarySodium', name: 'Sodium', unit: 'mg' },
   { id: 'HKQuantityTypeIdentifierDietaryPotassium', name: 'Potassium', unit: 'mg' },
